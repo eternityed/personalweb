@@ -4,9 +4,9 @@
 }
 body{
     margin: 0;
-    width: 100vw;
     height: 100vh;
-    display: flex;
+    width: 100vw;
+    display :flex;
     justify-content: center;
     align-items: center;
 }
@@ -56,13 +56,13 @@ body{
     align-items: self-start;
 }
 .linklist a{
-    display: block;
+    display: flex;
     width: 120px;
     height: 45px;
     border-radius: 10px;
     color: #fff;
-    line-height: 45px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     cursor: pointer;
     background-size: 200%;
@@ -82,4 +82,30 @@ body{
 }
 .linklist a:hover{
     background-position: right;
+}
+@media (max-width: 600px) {
+    .box{
+        flex-direction: column;
+        width: 300px;
+        height: 600px;        
+    }
+    .boxl{
+        height: 25%;
+    }
+    .boxl img{
+        width: 100px;
+    }
+    .text{
+        height: 75%;
+        padding: 5px;
+    }
+    .linklist{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .linklist a{
+        margin: 20px;
+        width: 90px;
+        height: 33.75px;
+    }
 }
